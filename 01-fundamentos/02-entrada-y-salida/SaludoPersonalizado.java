@@ -14,7 +14,7 @@ class SaludoPersonalizado{
         String nombre = sc.nextLine();
         System.out.println("Digita la edad: ");
         int edad = sc.nextInt();
-        System.out.println("Saludos "+nombre+"tienes "+edad+" anios");  
+        System.out.println("Saludos "+nombre+" tienes "+edad+" anios");  
         sc.close();
 
     }
