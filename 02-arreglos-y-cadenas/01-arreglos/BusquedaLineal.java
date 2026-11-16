@@ -1,36 +1,33 @@
 /*
- * Estudia índices, recorridos y manipulación de arreglos.
- * Concepto: invertir el orden de los elementos de una colección.
- * Consigna: recibe un arreglo de enteros e invierte sus elementos sin crearece,
- * otro arreglo del mismo tamaño.era aparición.
+ * Estudia recorridos secuenciales y banderas booleanas.
+ * Concepto: búsqueda lineal en un arreglo.
+ * Consigna: solicita un valor y determina si aparece en un arreglo; si aparece,
+ * informa la posición de su primera aparición.
  */
 
-import java.util.Random;;
+import java.util.Scanner;
 
-class InvertirArreglo {
+class BusquedaLineal {
+
     public static void main(String[] args) {
-    public static void main(String[] args) {
-        int[] numeros = new int[10];, 12 };
-        Random random = new Random();
+        int[] numeros = { 45, 20, 30, 12 };
+        int numero;
         boolean found = false;
-        for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = random.nextInt(100);a buscar: ");
-        }umero = s.nextInt();
+        Scanner s = new Scanner(System.in);
+        System.out.println("Digite el numero a buscar: ");
+        numero = s.nextInt();
 
         for (int i = 0; i < numeros.length; i++) {
-            System.out.println(numeros[i]);
-        }       found = true;
+            if (numeros[i] == numero) {
+                found = true;
                 System.out.println("numero " + numero + " encontrado en la posicion " + " " + i);
-        int var1 = numeros[1];
-        int var2 = numeros[10];
-        int temp;
+                break;
+            }
+
         }
-        //invertir arreglo)
-        for (int i = 0, j = numeros.length - 1; i < j; i++, j--) {            System.out.println("no se encontro");
-            temp = numeros[i];
-            numeros[i] = numeros[j];
-            numeros[j] = temp;
-        }}        System.out.println("Arreglo invertido:");        for (int i = 0; i < numeros.length; i++) {            System.out.println(numeros[i]);
-        }
+        if (found == false)
+            System.out.println("no se encontro");
+
     }
+
 }
