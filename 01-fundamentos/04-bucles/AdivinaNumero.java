@@ -36,6 +36,5 @@ class AdivinaNumero {
 
         }
         n.close();
-
     }
 }
