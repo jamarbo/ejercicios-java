@@ -28,6 +28,7 @@ class MaximoArreglo {
 
         }
         System.out.println("mayor es: " + mayor);
+        s.close();
     }
 
 }

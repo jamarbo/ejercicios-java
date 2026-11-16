@@ -27,7 +27,7 @@ class BusquedaLineal {
         }
         if (found == false)
             System.out.println("no se encontro");
-
+        s.close();
     }
 
 }
