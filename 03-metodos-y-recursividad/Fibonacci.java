@@ -28,19 +28,17 @@ public class Fibonacci {
             System.out.println("Ingresa una cantidad entre 1 y 93.");
             return;
         }
-
         long anterior = 0;
         long actual = 1;
 
         for (int i = 0; i < num; i++) {
-            System.out.print(anterior);
+            System.out.println(anterior);
             if (i < num - 1) {
-                System.out.print(" ");
                 long siguiente = anterior + actual;
                 anterior = actual;
                 actual = siguiente;
             }
         }
-        System.out.println();
+
     }
 }
